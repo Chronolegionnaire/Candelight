@@ -1,0 +1,442 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+	},
+	"elements": [
+		{
+			"name": "CandlestickBase",
+			"from": [ 6.0, 15.6, 6.0 ],
+			"to": [ 10.0, 16.1, 10.0 ],
+			"rotationOrigin": [ 6.0, 16.0, 6.0 ],
+			"faces": {
+				"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 4.0, 0.5 ] },
+				"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 4.0, 0.5 ] },
+				"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 4.0, 0.5 ] },
+				"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 4.0, 0.5 ] },
+				"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 4.0, 4.0 ] },
+				"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 4.0, 4.0 ] }
+			},
+			"children": [
+				{
+					"name": "CandlestickBase2",
+					"from": [ 0.5, -0.5, 0.5 ],
+					"to": [ 3.5, 0.0, 3.5 ],
+					"rotationOrigin": [ 0.5, 0.0, 0.5 ],
+					"faces": {
+						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.0, 3.0 ], "windMode": [-1,-1,-1,-1] }
+					},
+					"children": [
+						{
+							"name": "CandlestickBase3",
+							"from": [ 0.7, -0.7, 0.7 ],
+							"to": [ 2.3, 0.0, 2.3 ],
+							"rotationOrigin": [ 0.7, 0.0, 0.7 ],
+							"faces": {
+								"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+								"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+								"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+								"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+								"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 1.5 ] }
+							}
+						}
+					]
+				},
+				{
+					"name": "CandlestickStem",
+					"from": [ 1.8, -11.4, 2.3 ],
+					"to": [ 2.4, -8.9, 2.9 ],
+					"rotationOrigin": [ 2.1, -11.4, 2.9 ],
+					"rotationX": 40.0,
+					"faces": {
+						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.5 ] },
+						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.5 ] },
+						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.5 ] },
+						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.5 ] }
+					},
+					"children": [
+						{
+							"name": "CandlestickStem2",
+							"from": [ 0.0, 2.5, 0.0 ],
+							"to": [ 0.6, 5.0, 0.6 ],
+							"rotationOrigin": [ 0.3, 2.5, 0.6 ],
+							"rotationX": -20.0,
+							"faces": {
+								"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.5 ] },
+								"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.5 ] },
+								"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.5 ] },
+								"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.5 ] }
+							},
+							"children": [
+								{
+									"name": "CandlestickStem3",
+									"from": [ 0.0, 2.5, 0.0 ],
+									"to": [ 0.6, 4.8, 0.6 ],
+									"rotationOrigin": [ 0.3, 2.5, 0.6 ],
+									"rotationX": -20.0,
+									"faces": {
+										"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.0 ] },
+										"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.0 ] },
+										"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.0 ] },
+										"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.0 ] }
+									},
+									"children": [
+										{
+											"name": "CandlestickStem4",
+											"from": [ 0.0, 2.3, 0.0 ],
+											"to": [ 0.6, 4.8, 0.6 ],
+											"rotationOrigin": [ 0.3, 2.3, 0.6 ],
+											"rotationX": -20.0,
+											"faces": {
+												"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.5 ] },
+												"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.5 ] },
+												"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.5 ] },
+												"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.5 ] }
+											},
+											"children": [
+												{
+													"name": "CandlestickStem5",
+													"from": [ 0.0, 2.5, 0.0 ],
+													"to": [ 0.6, 5.3, 0.6 ],
+													"rotationOrigin": [ 0.3, 2.5, 0.6 ],
+													"rotationX": -20.0,
+													"faces": {
+														"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.5 ] },
+														"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.5 ] },
+														"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.5 ] },
+														"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.5 ] }
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "CandlestickStem",
+					"from": [ 1.4, -11.9, 1.4 ],
+					"to": [ 2.6, -10.4, 2.6 ],
+					"rotationOrigin": [ 2.0, -11.9, 2.0 ],
+					"faces": {
+						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.5 ] },
+						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.5 ] },
+						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.5 ] },
+						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.5 ] },
+						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "windMode": [-1,-1,-1,-1] }
+					},
+					"children": [
+						{
+							"name": "CandlestickStemRib",
+							"from": [ -0.2, 0.3, -0.2 ],
+							"to": [ 1.4, 1.3, 1.4 ],
+							"rotationOrigin": [ -0.2, 0.3, -0.2 ],
+							"faces": {
+								"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 1.0 ] },
+								"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 1.0 ] },
+								"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 1.0 ] },
+								"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 1.0 ] },
+								"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 1.5 ] },
+								"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 1.5 ] }
+							}
+						},
+						{
+							"name": "CandlestickFork1",
+							"from": [ 1.2, 0.2, 0.0 ],
+							"to": [ 3.6, 1.4, 1.2 ],
+							"rotationOrigin": [ 1.2, 0.2, 0.0 ],
+							"rotationZ": 20.0,
+							"faces": {
+								"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+								"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+								"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+								"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+								"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+								"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 1.0 ] }
+							},
+							"children": [
+								{
+									"name": "CandlestickNeck1",
+									"from": [ 1.3, 0.4, -0.01 ],
+									"to": [ 2.5, 2.0, 1.21 ],
+									"rotationOrigin": [ 1.3, 0.4, 0.0 ],
+									"rotationZ": -20.0,
+									"faces": {
+										"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.5 ] },
+										"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.5 ] },
+										"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.5 ] },
+										"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.5 ] },
+										"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+										"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] }
+									},
+									"children": [
+										{
+											"name": "CandlestickCup4",
+											"from": [ -0.2848, 1.5795, -0.29 ],
+											"to": [ 1.5152, 2.3795, 1.51 ],
+											"rotationOrigin": [ -0.2848, 1.5795, -0.29 ],
+											"faces": {
+												"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+												"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+												"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+												"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+												"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 1.5 ] }
+											},
+											"children": [
+												{
+													"name": "CandlestickCup5",
+													"from": [ -0.2, 0.8, -0.2 ],
+													"to": [ 2.0, 3.2, 2.0 ],
+													"rotationOrigin": [ -0.2, 0.8, -0.2 ],
+													"faces": {
+														"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+														"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+														"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+														"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+														"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+														"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+													},
+													"children": [
+														{
+															"name": "candle",
+															"from": [ 0.1, 2.4, 0.1 ],
+															"to": [ 2.1, 5.4, 2.1 ],
+															"rotationOrigin": [ 1.1, 2.4, 1.1 ],
+															"faces": {
+																"north": { "texture": "#candle", "uv": [ 0.0, 12.0, 2.0, 15.0 ] },
+																"east": { "texture": "#candle", "uv": [ 4.0, 12.0, 6.0, 15.0 ] },
+																"south": { "texture": "#candle", "uv": [ 9.0, 12.0, 11.0, 15.0 ] },
+																"west": { "texture": "#candle", "uv": [ 11.0, 12.0, 13.0, 15.0 ] },
+																"up": { "texture": "#candle", "uv": [ 12.0, 2.0, 14.0, 4.0 ] },
+																"down": { "texture": "#candle", "uv": [ 12.0, 14.0, 14.0, 16.0 ] }
+															},
+															"children": [
+																{
+																	"name": "top",
+																	"from": [ 0.8, 3.0, 0.8 ],
+																	"to": [ 1.2, 3.5, 1.2 ],
+																	"faces": {
+																		"north": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "glow": 196 },
+																		"east": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "glow": 196 },
+																		"south": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "glow": 196 },
+																		"west": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "glow": 196 },
+																		"up": { "texture": "#candle", "uv": [ 0.0, 0.0, 0.5, 0.5 ], "glow": 196 }
+																	},
+																	"children": [
+																		{
+																			"name": "Cube2",
+																			"from": [ -0.2, 0.0, 0.2 ],
+																			"to": [ 0.6, 1.0, 0.2 ],
+																			"rotationOrigin": [ 0.2, 0.0, 0.2 ],
+																			"faces": {
+																				"north": { "texture": "#fire", "uv": [ 7.0, 2.0, 9.0, 4.0 ], "glow": 196, "autoUv": false, "windMode": [-1,9,9,-1], "windData": [0,1,1,0] }
+																			},
+																			"children": [
+																				{
+																					"name": "Cube3",
+																					"from": [ 0.2, 1.0, 0.0 ],
+																					"to": [ 0.6, 1.5, 0.0 ],
+																					"rotationOrigin": [ 0.4, 1.0, 0.0 ],
+																					"faces": {
+																						"north": { "texture": "#fire", "uv": [ 13.5, 14.0, 14.5, 15.0 ], "autoUv": false, "windMode": [9,9,9,9], "windData": [1,1,1,1] }
+																					}
+																				},
+																				{
+																					"name": "Cube4",
+																					"from": [ 1.0E-4, 0.0, 2.0E-4 ],
+																					"to": [ 0.8001, 1.0, 2.0E-4 ],
+																					"rotationOrigin": [ 0.4, 0.0, 0.0 ],
+																					"rotationY": 89.98,
+																					"faces": {
+																						"north": { "texture": "#fire", "uv": [ 9.0, 2.0, 11.0, 4.0 ], "glow": 196, "autoUv": false, "windMode": [-1,9,9,-1], "windData": [0,1,1,0] }
+																					},
+																					"children": [
+																						{
+																							"name": "Cube5",
+																							"from": [ 0.2, 1.0, 0.0 ],
+																							"to": [ 0.6, 1.5, 0.0 ],
+																							"rotationOrigin": [ 0.4, 1.0, 0.0 ],
+																							"faces": {
+																								"north": { "texture": "#fire", "uv": [ 15.0, 14.0, 16.0, 15.0 ], "autoUv": false, "windMode": [9,9,9,9], "windData": [1,1,1,1] }
+																							}
+																						}
+																					]
+																				},
+																				{
+																					"name": "Cube11",
+																					"from": [ -1.4, -0.5, -0.08 ],
+																					"to": [ 2.1, 2.5, -0.08 ],
+																					"renderPass": 3,
+																					"rotationOrigin": [ 0.4, 1.0, 0.0 ],
+																					"rotationY": 45.0,
+																					"faces": {
+																						"north": { "texture": "#fireparticle", "uv": [ 0.0, 8.0, 3.5, 11.0 ], "glow": 160, "windMode": [9,9,9,9], "windData": [0,1,1,0] }
+																					},
+																					"children": [
+																						{
+																							"name": "Cube12",
+																							"from": [ 0.0, 0.0, 0.0 ],
+																							"to": [ 3.5, 3.0, 0.0 ],
+																							"renderPass": 3,
+																							"rotationOrigin": [ 1.8, 1.5, 0.08 ],
+																							"rotationY": -90.0,
+																							"faces": {
+																								"north": { "texture": "#fireparticle", "uv": [ 0.0, 8.0, 3.5, 11.0 ], "glow": 160, "windMode": [9,9,9,9], "windData": [0,1,1,0] }
+																							}
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "CandlestickFork2",
+							"from": [ -2.4, 0.2, 0.0 ],
+							"to": [ 0.0, 1.4, 1.2 ],
+							"rotationOrigin": [ 0.0, 0.2, 0.0 ],
+							"rotationZ": -20.0,
+							"faces": {
+								"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+								"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+								"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+								"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+								"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+								"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 1.0 ] }
+							},
+							"children": [
+								{
+									"name": "CandlestickNeck2",
+									"from": [ -0.1, 0.4, -0.01 ],
+									"to": [ 1.1, 2.0, 1.21 ],
+									"rotationOrigin": [ 1.1, 0.4, 0.0 ],
+									"rotationZ": 20.0,
+									"faces": {
+										"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.5 ] },
+										"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.5 ] },
+										"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.5 ] },
+										"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.5 ] },
+										"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+										"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 1.0 ] }
+									},
+									"children": [
+										{
+											"name": "CandlestickCup1",
+											"from": [ -0.32, 1.58, -0.29 ],
+											"to": [ 1.48, 2.38, 1.51 ],
+											"rotationOrigin": [ -0.32, 1.58, -0.29 ],
+											"faces": {
+												"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+												"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+												"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+												"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 0.5 ] },
+												"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 1.5 ] }
+											},
+											"children": [
+												{
+													"name": "CandlestickCup2",
+													"from": [ -0.2, 0.8, -0.2 ],
+													"to": [ 2.0, 3.2, 2.0 ],
+													"rotationOrigin": [ -0.2, 0.8, -0.2 ],
+													"faces": {
+														"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+														"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+														"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+														"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+														"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+													},
+													"children": [
+														{
+															"name": "CandlestickCup3",
+															"from": [ 0.2, 0.2, 0.2 ],
+															"to": [ 2.0, 2.4, 2.0 ],
+															"rotationOrigin": [ 0.2, 0.2, 0.2 ],
+															"faces": {
+																"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 2.0 ] },
+																"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 2.0 ] },
+																"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 2.0 ] },
+																"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 2.0 ] }
+															},
+															"children": [
+																{
+																	"name": "CandlestickCupTop1",
+																	"from": [ -0.2, 2.2, -0.2 ],
+																	"to": [ 0.0, 2.2, 2.0 ],
+																	"rotationOrigin": [ -0.2, 2.2, -0.2 ],
+																	"faces": {
+																		"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.0 ] }
+																	}
+																},
+																{
+																	"name": "CandlestickCupTop3",
+																	"from": [ 1.8, 2.2, -0.2 ],
+																	"to": [ 2.0, 2.2, 2.0 ],
+																	"rotationOrigin": [ 1.8, 2.2, -0.2 ],
+																	"faces": {
+																		"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.5, 2.0 ] }
+																	}
+																},
+																{
+																	"name": "CandlestickCupTop2",
+																	"from": [ 0.0, 2.2, -0.2 ],
+																	"to": [ 1.8, 2.2, 0.0 ],
+																	"rotationOrigin": [ 0.0, 2.2, -0.2 ],
+																	"faces": {
+																		"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 0.5 ] }
+																	}
+																},
+																{
+																	"name": "CandlestickCupTop4",
+																	"from": [ 0.0, 2.2, 1.8 ],
+																	"to": [ 1.8, 2.2, 2.0 ],
+																	"rotationOrigin": [ 0.0, 2.2, 1.8 ],
+																	"faces": {
+																		"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 0.5 ] }
+																	}
+																},
+																{
+																	"name": "CandlestickCupBottom",
+																	"from": [ 0.0, 0.0, 0.0 ],
+																	"to": [ 1.8, 0.0, 1.8 ],
+																	"faces": {
+																		"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.5, 1.5 ], "windMode": [-1,-1,-1,-1] }
+																	}
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]}

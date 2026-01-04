@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeBuild", "Candelight\CakeBuild\CakeBuild.csproj", "{339B6CBA-2929-46C7-8AA4-3CD709A83FE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Candelight", "Candelight\Candelight\Candelight.csproj", "{F910333E-2F8B-4691-82FA-856C0E457C9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{339B6CBA-2929-46C7-8AA4-3CD709A83FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{339B6CBA-2929-46C7-8AA4-3CD709A83FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{339B6CBA-2929-46C7-8AA4-3CD709A83FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{339B6CBA-2929-46C7-8AA4-3CD709A83FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F910333E-2F8B-4691-82FA-856C0E457C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F910333E-2F8B-4691-82FA-856C0E457C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F910333E-2F8B-4691-82FA-856C0E457C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F910333E-2F8B-4691-82FA-856C0E457C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

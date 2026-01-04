@@ -1,0 +1,26 @@
+[
+  {
+    "op": "replace",
+    "path": "/ingredient/allowedVariants",
+    "value": ["blue", "fire", "brown", "red" ],
+    "file": "candlelight:recipes/clayforming/candelabra1.json",
+    "dependsOn": [{ "modid": "moreclay" }],
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/ingredient/allowedVariants",
+    "value": ["blue", "fire", "brown", "red" ],
+    "file": "candlelight:recipes/clayforming/candelabra2.json",
+    "dependsOn": [{ "modid": "moreclay" }],
+    "side": "Server"
+  },
+  {
+    "op": "replace",
+    "path": "/ingredient/allowedVariants",
+    "value": ["blue", "fire", "brown", "red" ],
+    "file": "candlelight:recipes/clayforming/candelabra3.json",
+    "dependsOn": [{ "modid": "moreclay" }],
+    "side": "Server"
+  }
+]

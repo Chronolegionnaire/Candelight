@@ -1,0 +1,77 @@
+{
+	"code": "candelabra1",
+	"class": "Candlelight:BlockCandelabra",
+	"entityclass": "Candlelight:BlockEntityCandelabra",
+	"attributes": {
+		"maxCandles": 1,
+		"litParticles": [
+			{
+				"hsvaColor": [{ "avg": 20, "var": 20 }, { "avg": 255, "var": 50 }, { "avg": 255, "var": 50 }, { "avg": 255, "var": 0 }],
+				"opacityEvolve": { "transform": "quadratic", "factor": -16 },
+				"gravityEffect": { "avg": 0, "var": 0 },
+				"velocity": [ { "avg": 0, "var": 0.0125 }, { "avg": 0.03, "var": 0.01 }, { "avg": 0, "var": 0.0125 } ],
+				"quantity": { "avg": 0.1 },
+				"size": { "avg": 0.05, "var": 0.025 },
+				"lifeLength": { "avg": 0.5 },
+				"sizeEvolve": { "transform": "linear", "factor": 0.1 },
+				"particleModel": "Quad",
+				"vertexFlags": 128,
+				"windAffectednes": 0.05
+			}
+		],
+		"particleSpawns": {
+			"up":   [ { "x": 0.50, "y": 0.85, "z": 0.50 } ],
+			"down": [ { "x": 0.50, "y": 0.82, "z": 0.50 } ],
+			"wall": [ { "x": 0.50, "y": 0.85, "z": 0.75 } ]
+		}
+	},
+	"particleProperties": [
+		{
+			"quantity": { "avg": 0 }
+		}
+	],
+	"variantgroups": [
+		{ "code": "metal", "states": ["copper", "bismuthbronze", "blackbronze", "tinbronze", "brass", "tin", "silver", "gold", "electrum", "platinum"] }
+	],
+	"shape": { "base": "block/candelabra1/candelabra1-up-candle0" },
+	"sidesolid": { "all": false },
+	"sideopaque": { "all": false },
+	"creativeinventory": {
+		"general": ["*"],
+		"decorative": ["*"]
+	},
+	"replaceable": 5001,
+	"resistance": 0.5,
+	"maxStackSize": 8,
+	"lightAbsorption": 0,
+	"textures": {
+		"candle":  { "base": "game:block/candle" },
+		"fire": { "base": "game:block/fire" },
+		"metal": { "base": "game:block/metal/plate/{metal}" },
+		"fireparticle": { "base": "block/fireparticle" }
+	},
+	"collisionselectionbox": { "x1": 0.375, "y1": 0, "z1": 0.375, "x2": 0.625, "y2": 0.687, "z2": 0.625 },
+	"blockmaterial": "metal",
+	"fpHandTransform": {
+		"translation": { "x": 0.29, "y": -0.1, "z": 0 },
+		"scale": 1.25
+	},
+	"guiTransform": {
+		"translation": { "x": 3.5, "y": -8.7, "z": -3.9 },
+		"rotation": { "x": 0, "y": 146, "z": 16 },
+		"scale": 2
+	},
+	"groundTransform": {
+		"translation": { "x": -0, "y": 0.58, "t": 0 },
+		"rotation": { "x": 0, "y": 0, "z": 0 },
+		"origin": { "x": 0.3899, "y": 0.6, "z": 0.1 },
+		"scale": 4.5
+	},
+	"tpHandTransform": {
+		"translation": { "x": -0.82, "y": -0.45, "z": -0.5 },
+		"rotation": { "x": 0, "y": 0, "z": -90 },
+		"scale": 1
+	},
+	"rainPermeable": true,
+	"materialDensity": 600
+}

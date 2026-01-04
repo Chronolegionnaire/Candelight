@@ -1,0 +1,11 @@
+﻿{
+  "Type": "code",
+  "side": "universal",
+  "textureSize": 32,
+  "name": "Candlelight",
+  "version": "1.0.0",
+  "description": "Adds an array of candlesticks and candelabras which can be cast from various metals for lighting.",
+  "modid": "candlelight",
+  "authors": ["Catasteroid", "Chrono"],
+  "contributors": []
+}
