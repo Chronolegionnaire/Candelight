@@ -203,6 +203,13 @@
 										}
 									]
 								}
+							],
+							"attachmentpoints": [
+								{
+									"code": "Point1",
+									"posX": 0.2,"posY": 0.5,"posZ": 0.2,
+									"rotationX": 0.0,"rotationY": 0.0,"rotationZ": 0.0
+								}
 							]
 						}
 					]

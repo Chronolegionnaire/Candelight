@@ -81,65 +81,23 @@ namespace Candlelight
 
             var be = api.World.BlockAccessor.GetBlockEntity(pos) as BlockEntityCandelabra;
             if (be == null || !be.Lit || be.CandleCount <= 0) return;
+            Vec3f[] wickPoints = be.GetOrCreateWickPoints();
+            if (wickPoints == null || wickPoints.Length == 0) return;
 
-            var spawnsAttr = Attributes?["particleSpawns"];
-            if (spawnsAttr == null) return;
-            float eastWestYOffset = Attributes?["eastWestYOffset"]?.AsFloat(0.70f) ?? -0.25f;
-
-            string orient =
-                be.AttachFace == BlockFacing.UP ? "up" :
-                be.AttachFace == BlockFacing.DOWN ? "down" : "wall";
-
-            Vec3f[] spawnPoints = spawnsAttr[orient]?.AsObject<Vec3f[]>();
-            if (spawnPoints == null || spawnPoints.Length == 0) return;
-
-            int countToSpawn = GameMath.Clamp(be.CandleCount, 1, spawnPoints.Length);
-
-            float yawDeg;
-            if (be.AttachFace == BlockFacing.UP || be.AttachFace == BlockFacing.DOWN)
-            {
-                var hf = BlockFacing.FromCode(be.HorFacing) ?? BlockFacing.NORTH;
-                yawDeg = ((hf.HorizontalAngleIndex + 1) % 4) * 90f;
-            }
-            else
-            {
-                var facing = be.AttachFace;
-                yawDeg = ((facing.HorizontalAngleIndex + 1) % 4) * 90f + 180f;
-            }
-
-            float yawRad = yawDeg * GameMath.DEG2RAD;
+            int countToSpawn = GameMath.Clamp(be.CandleCount, 1, wickPoints.Length);
 
             for (int p = 0; p < countToSpawn; p++)
             {
-                Vec3f local = spawnPoints[p].Clone();
-
-                float cx = 0.5f, cz = 0.5f;
-                float x = local.X - cx;
-                float z = local.Z - cz;
-
-                float rx = x * GameMath.Cos(yawRad) - z * GameMath.Sin(yawRad);
-                float rz = x * GameMath.Sin(yawRad) + z * GameMath.Cos(yawRad);
-
-                float px = cx + rx;
-                float pz = cz + rz;
-                float py = local.Y;
-
-                if (be.AttachFace != BlockFacing.UP && be.AttachFace != BlockFacing.DOWN &&
-                    (be.AttachFace == BlockFacing.EAST || be.AttachFace == BlockFacing.WEST))
-                {
-                    px = 1f - px;
-                    py = 1f - py;
-                    py += eastWestYOffset;
-                }
+                Vec3f local = wickPoints[p];
 
                 for (int i = 0; i < litParticles.Length; i++)
                 {
                     var bps = litParticles[i];
                     bps.WindAffectednesAtPos = windAffectednessAtPos;
 
-                    bps.basePos.X = pos.X + px;
-                    bps.basePos.Y = pos.InternalY + py;
-                    bps.basePos.Z = pos.Z + pz;
+                    bps.basePos.X = pos.X + local.X;
+                    bps.basePos.Y = pos.InternalY + local.Y;
+                    bps.basePos.Z = pos.Z + local.Z;
 
                     manager.Spawn(bps);
                 }
