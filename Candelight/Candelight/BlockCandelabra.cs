@@ -246,6 +246,20 @@ namespace Candlelight
             byte[] oldLight = GetLightHsv(world.BlockAccessor, pos);
             world.BlockAccessor.RemoveBlockLight(oldLight, pos);
 
+            var be = world.BlockAccessor.GetBlockEntity(pos) as BlockEntityCandelabra;
+
+            if (be != null && be.CandleCount > 0)
+            {
+                var candleItem = world.GetItem(new AssetLocation("game", "candle"));
+                if (candleItem != null)
+                {
+                    world.SpawnItemEntity(
+                        new ItemStack(candleItem, be.CandleCount),
+                        pos.ToVec3d().Add(0.5, 0.25, 0.5)
+                    );
+                }
+            }
+
             base.OnBlockBroken(world, pos, byPlayer, dropQuantityMultiplier);
         }
 
